@@ -1,42 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Freeden AI — Free All-in-One AI Tools</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #fff;
+      background-color: #121212;
+      color: #ffffff;
       text-align: center;
       padding: 20px;
     }
     h1 {
-      color: #00ffd5;
+      color: #00ffcc;
     }
-    .tool-button {
-      background-color: #00ffd5;
-      color: #111;
+    h2 {
+      color: #00ccff;
+      margin-top: 40px;
+    }
+    iframe {
       border: none;
-      padding: 12px 20px;
-      font-size: 18px;
-      border-radius: 8px;
+      width: 100%;
+      max-width: 800px;
+      height: 600px;
       margin-top: 20px;
-      cursor: pointer;
+      border-radius: 8px;
     }
-    .tool-button:hover {
-      background-color: #00c8a8;
+    .tool-section {
+      margin-bottom: 60px;
+    }
+    @media (max-width: 600px) {
+      iframe {
+        height: 500px;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>🤖 Freeden AI</h1>
-  <p>All your favorite AI tools in one place — totally free!</p>
+  <h1>🌐 Freeden AI</h1>
+  <p>Explore and use powerful AI tools — all in one place and totally free.</p>
 
-  <h2>🧠 ChatGPT-like AI (No Login)</h2>
-  <a href="https://yuntian-deng-chatgpt.hf.space" target="_blank">
-    <button class="tool-button">Launch Tool</button>
-  </a>
+  <div class="tool-section">
+    <h2>🤖 ChatGPT-like AI</h2>
+    <iframe src="https://yuntian-deng-chatgpt.hf.space"></iframe>
+  </div>
+
+  <div class="tool-section">
+    <h2>🎨 AI Art Generator</h2>
+    <iframe src="https://mrfabulous-txt2img.hf.space"></iframe>
+  </div>
+
+  <div class="tool-section">
+    <h2>🗣️ Voice Cloning / Text-to-Speech</h2>
+    <iframe src="https://coqui-tts-demo.hf.space"></iframe>
+  </div>
+
+  <div class="tool-section">
+    <h2>💻 Code Generator</h2>
+    <iframe src="https://huggingface.co/spaces/akhaliq/codegen2-1B"></iframe>
+  </div>
+
+  <div class="tool-section">
+    <h2>🖼️ Image Enhancer / Background Remover</h2>
+    <iframe src="https://huggingface.co/spaces/akhaliq/RemBG"></iframe>
+  </div>
+
 </body>
 </html>
