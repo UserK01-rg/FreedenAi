@@ -3,43 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI Tools Hub - All Free AI Tools in One Place</title>
+  <title>AI Tools Hub - All Free AI Tools</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      max-width: 900px;
+      max-width: 700px;
       margin: 20px auto;
       padding: 0 15px;
       background: #f9f9f9;
       color: #222;
     }
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
     h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.2em;
-    }
-    p.subtitle {
-      font-size: 1.1rem;
-      color: #555;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #007acc;
     }
     .tool {
       background: white;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       padding: 15px;
-      border-radius: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     .tool h2 {
-      margin-top: 0;
-      font-size: 1.5rem;
-      color: #007acc;
-    }
-    .tool p {
-      margin: 8px 0 15px;
-      color: #444;
+      margin: 0 0 8px;
     }
     iframe {
       border: none;
@@ -48,66 +35,43 @@
       border-radius: 6px;
       box-shadow: 0 1px 6px rgba(0,0,0,0.1);
     }
-    @media (max-width: 700px) {
-      iframe {
-        height: 450px;
-      }
+    .link-button {
+      display: inline-block;
+      background-color: #007acc;
+      color: white;
+      padding: 12px 20px;
+      margin-top: 10px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .link-button:hover {
+      background-color: #005fa3;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>AI Tools Hub</h1>
-    <p class="subtitle">Explore the best free AI tools—all embedded here for seamless use.</p>
-  </header>
 
-  <section class="tool">
-    <h2>PhotoMaker</h2>
-    <p>Upload photos and generate stunning customized images with AI.</p>
-    <iframe src="https://huggingface.co/spaces/TencentARC/PhotoMaker"></iframe>
-  </section>
+  <h1>AI Tools Hub</h1>
 
-  <section class="tool">
-    <h2>Stable Diffusion 2-1</h2>
-    <p>Generate high-quality images from text prompts using Stable Diffusion.</p>
-    <iframe src="https://huggingface.co/spaces/stabilityai/stable-diffusion"></iframe>
-  </section>
+  <div class="tool">
+    <h2>PhotoMaker (Embedded)</h2>
+    <p>Upload photos and generate stunning customized images.</p>
+    <iframe src="https://TencentARC-PhotoMaker.hf.space" loading="lazy"></iframe>
+  </div>
 
-  <section class="tool">
-    <h2>AI Comic Factory</h2>
-    <p>Create unique AI-generated comics from your prompts.</p>
-    <iframe src="https://huggingface.co/spaces/jbilcke-hf/AI-Comic-Factory"></iframe>
-  </section>
+  <div class="tool">
+    <h2>Other AI Tools (Open in New Tab)</h2>
+    <p>These tools do not allow embedding, so please open them in a new tab.</p>
+    <a href="https://huggingface.co/spaces/stabilityai/stable-diffusion" target="_blank" rel="noopener" class="link-button">Stable Diffusion</a><br/>
+    <a href="https://huggingface.co/spaces/jbilcke-hf/AI-Comic-Factory" target="_blank" rel="noopener" class="link-button">AI Comic Factory</a><br/>
+    <a href="https://huggingface.co/spaces/Xenova/Remove-Background-Web" target="_blank" rel="noopener" class="link-button">Remove Background Web</a><br/>
+    <a href="https://huggingface.co/spaces/facebook/musicgen" target="_blank" rel="noopener" class="link-button">MusicGen</a><br/>
+    <a href="https://huggingface.co/spaces/Podcastify/Podcastify" target="_blank" rel="noopener" class="link-button">Podcastify</a><br/>
+    <a href="https://huggingface.co/spaces/huggingface-projects/QR-Code-AI-Art-Generator" target="_blank" rel="noopener" class="link-button">QR Code AI Art Generator</a><br/>
+    <a href="https://huggingface.co/spaces/lmsys/Open-LLM-Leaderboard-2" target="_blank" rel="noopener" class="link-button">Open LLM Leaderboard</a>
+  </div>
 
-  <section class="tool">
-    <h2>Remove Background Web</h2>
-    <p>Remove backgrounds from images instantly in your browser.</p>
-    <iframe src="https://huggingface.co/spaces/Xenova/Remove-Background-Web"></iframe>
-  </section>
-
-  <section class="tool">
-    <h2>MusicGen</h2>
-    <p>Generate original music tracks powered by AI.</p>
-    <iframe src="https://huggingface.co/spaces/facebook/musicgen"></iframe>
-  </section>
-
-  <section class="tool">
-    <h2>Podcastify</h2>
-    <p>Convert your text into engaging podcasts using AI voices.</p>
-    <iframe src="https://huggingface.co/spaces/Podcastify/Podcastify"></iframe>
-  </section>
-
-  <section class="tool">
-    <h2>QR Code AI Art Generator</h2>
-    <p>Blend QR codes with AI-generated art to create creative designs.</p>
-    <iframe src="https://huggingface.co/spaces/huggingface-projects/QR-Code-AI-Art-Generator"></iframe>
-  </section>
-
-  <section class="tool">
-    <h2>Open LLM Leaderboard 2</h2>
-    <p>Track and evaluate open-source large language models with this leaderboard.</p>
-    <iframe src="https://huggingface.co/spaces/lmsys/Open-LLM-Leaderboard-2"></iframe>
-  </section>
-  
 </body>
 </html>
