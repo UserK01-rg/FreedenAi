@@ -2,77 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Freeden AI — Free All-in-One AI Tools</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Tools Hub</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #eee;
-      text-align: center;
       padding: 20px;
+      max-width: 600px;
+      margin: auto;
+      background: #f9f9f9;
     }
-    h1 { color: #0ff; margin-bottom: 5px; }
-    p { margin-top: 0; color: #aaa; }
-    .tool {
-      margin: 40px 0;
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
     }
-    .tool h2 {
-      color: #0af;
-      margin-bottom: 10px;
-    }
-    iframe {
-      width: 100%;
-      max-width: 800px;
-      height: 600px;
-      border: none;
+    .tool-button {
+      display: block;
+      background-color: #4CAF50;
+      color: white;
+      padding: 15px;
+      margin: 10px 0;
+      text-align: center;
+      text-decoration: none;
       border-radius: 8px;
-      /* sandbox is required for HuggingFace embed endpoints */
+      font-size: 18px;
     }
-    @media (max-width: 600px) {
-      iframe { height: 500px; }
+    .tool-button:hover {
+      background-color: #45a049;
     }
   </style>
 </head>
 <body>
-  <h1>🌐 Freeden AI</h1>
-  <p>Access powerful AI tools directly on this page — 100% free, no login required.</p>
-
-  <!-- ChatGPT-like AI -->
-  <div class="tool">
-    <h2>🤖 ChatGPT-Style Conversation</h2>
-    <iframe 
-      sandbox="allow-forms allow-scripts allow-same-origin allow-popups"
-      src="https://hf.space/embed/yuntian-deng/chatgpt?container=iframe">
-    </iframe>
-  </div>
-
-  <!-- Text-to-Image AI -->
-  <div class="tool">
-    <h2>🎨 AI Art Generator (Stable Diffusion)</h2>
-    <iframe 
-      sandbox="allow-forms allow-scripts allow-same-origin allow-popups"
-      src="https://hf.space/embed/mrfabulous/txt2img?container=iframe">
-    </iframe>
-  </div>
-
-  <!-- Text-to-Speech AI -->
-  <div class="tool">
-    <h2>🗣 Text-to-Speech (Coqui TTS)</h2>
-    <iframe 
-      sandbox="allow-forms allow-scripts allow-same-origin allow-popups"
-      src="https://hf.space/embed/coqui-ai/bark?container=iframe">
-    </iframe>
-  </div>
-
-  <!-- Background Removal -->
-  <div class="tool">
-    <h2>🖼 Background Remover</h2>
-    <iframe 
-      sandbox="allow-forms allow-scripts allow-same-origin allow-popups"
-      src="https://hf.space/embed/akhaliq/RemBG?container=iframe">
-    </iframe>
-  </div>
-
+  <h1>Free AI Tools Hub</h1>
+  <a href="https://huggingface.co/spaces/stabilityai/stable-diffusion" class="tool-button" target="_blank" rel="noopener">Stable Diffusion (Image Generation)</a>
+  <a href="https://chat.openai.com" class="tool-button" target="_blank" rel="noopener">ChatGPT (AI Chat)</a>
+  <a href="https://deepai.org/machine-learning-model/text-generator" class="tool-button" target="_blank" rel="noopener">DeepAI Text Generator</a>
+  <!-- Add more tools here -->
 </body>
 </html>
