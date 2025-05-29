@@ -1,78 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Tools Hub</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            padding: 20px;
-        }
-        .tool {
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 300px;
-            text-align: center;
-        }
-        .tool iframe {
-            width: 100%;
-            height: 300px;
-        }
-        .tool h3 {
-            margin: 0;
-            padding: 10px;
-            background-color: #333;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Tools Hub - All Free AI Tools in One Place</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 0 15px;
+      background: #f9f9f9;
+      color: #222;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.2em;
+    }
+    p.subtitle {
+      font-size: 1.1rem;
+      color: #555;
+    }
+    .tool {
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+      padding: 15px;
+      border-radius: 10px;
+    }
+    .tool h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+      color: #007acc;
+    }
+    .tool p {
+      margin: 8px 0 15px;
+      color: #444;
+    }
+    iframe {
+      border: none;
+      width: 100%;
+      height: 600px;
+      border-radius: 6px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 700px) {
+      iframe {
+        height: 450px;
+      }
+    }
+  </style>
 </head>
 <body>
-
-<header>
+  <header>
     <h1>AI Tools Hub</h1>
-    <p>Explore and interact with various AI tools directly on this page.</p>
-</header>
+    <p class="subtitle">Explore the best free AI tools—all embedded here for seamless use.</p>
+  </header>
 
-<div class="container">
-    <div class="tool">
-        <h3>OmniGen AI Image Generator</h3>
-        <iframe src="https://Shitao-OmniGen.hf.space" frameborder="0"></iframe>
-    </div>
-    <div class="tool">
-        <h3>PhotoMaker</h3>
-        <iframe src="https://TencentARC-PhotoMaker.hf.space" frameborder="0"></iframe>
-    </div>
-    <div class="tool">
-        <h3>LivePortrait</h3>
-        <iframe src="https://KwaiVGI-LivePortrait.hf.space" frameborder="0"></iframe>
-    </div>
-    <div class="tool">
-        <h3>GAIA Search</h3>
-        <iframe src="https://spacerini-gaia.hf.space" frameborder="0"></iframe>
-    </div>
-    <div class="tool">
-        <h3>HuggingGPT</h3>
-        <iframe src="https://hugginggpt.hf.space" frameborder="0"></iframe>
-    </div>
-</div>
+  <section class="tool">
+    <h2>PhotoMaker</h2>
+    <p>Upload photos and generate stunning customized images with AI.</p>
+    <iframe src="https://huggingface.co/spaces/TencentARC/PhotoMaker"></iframe>
+  </section>
 
+  <section class="tool">
+    <h2>Stable Diffusion 2-1</h2>
+    <p>Generate high-quality images from text prompts using Stable Diffusion.</p>
+    <iframe src="https://huggingface.co/spaces/stabilityai/stable-diffusion"></iframe>
+  </section>
+
+  <section class="tool">
+    <h2>AI Comic Factory</h2>
+    <p>Create unique AI-generated comics from your prompts.</p>
+    <iframe src="https://huggingface.co/spaces/jbilcke-hf/AI-Comic-Factory"></iframe>
+  </section>
+
+  <section class="tool">
+    <h2>Remove Background Web</h2>
+    <p>Remove backgrounds from images instantly in your browser.</p>
+    <iframe src="https://huggingface.co/spaces/Xenova/Remove-Background-Web"></iframe>
+  </section>
+
+  <section class="tool">
+    <h2>MusicGen</h2>
+    <p>Generate original music tracks powered by AI.</p>
+    <iframe src="https://huggingface.co/spaces/facebook/musicgen"></iframe>
+  </section>
+
+  <section class="tool">
+    <h2>Podcastify</h2>
+    <p>Convert your text into engaging podcasts using AI voices.</p>
+    <iframe src="https://huggingface.co/spaces/Podcastify/Podcastify"></iframe>
+  </section>
+
+  <section class="tool">
+    <h2>QR Code AI Art Generator</h2>
+    <p>Blend QR codes with AI-generated art to create creative designs.</p>
+    <iframe src="https://huggingface.co/spaces/huggingface-projects/QR-Code-AI-Art-Generator"></iframe>
+  </section>
+
+  <section class="tool">
+    <h2>Open LLM Leaderboard 2</h2>
+    <p>Track and evaluate open-source large language models with this leaderboard.</p>
+    <iframe src="https://huggingface.co/spaces/lmsys/Open-LLM-Leaderboard-2"></iframe>
+  </section>
+  
 </body>
 </html>
